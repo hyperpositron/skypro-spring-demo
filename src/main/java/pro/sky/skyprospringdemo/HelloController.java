@@ -15,12 +15,12 @@ public class HelloController {
 //    public String answerHello(){
 //        return "<b>hello</b>";
 //    }
-    @GetMapping(path = "/hello")    //http://localhost:8080/hello?name=alan
+    @GetMapping(path = "/hello")    //http://localhost:8080/hello?name=alan   итог: hello alan
     public String answerHello(@RequestParam("name")String userName){
         return "<b>hello </b>" + userName;
     }
 
-    @GetMapping(path = "/vam_suda") //http://localhost:8080/vam_suda
+    @GetMapping(path = "/vam_suda") //http://localhost:8080/vam_suda  итог: куда??
     public String Ere() {
         return "<b>куда?? </b>";
     }
