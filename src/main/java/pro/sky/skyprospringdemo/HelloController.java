@@ -19,4 +19,9 @@ public class HelloController {
     public String answerHello(@RequestParam("name")String userName){
         return "<b>hello </b>" + userName;
     }
+
+    @GetMapping(path = "/vam_suda")
+    public String Ere() {
+        return "<b>куда?? </b>";
+    }
 }
